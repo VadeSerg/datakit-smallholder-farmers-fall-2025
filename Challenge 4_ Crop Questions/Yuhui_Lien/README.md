@@ -297,6 +297,7 @@ To better capture the specialized depth of conversation within each topic, **TF-
 * **Semantic Demand Score:** The average TF-IDF score (measuring specialized depth) for the question content within its topic group.
 * **Semantic Supply Score:** The average TF-IDF score (measuring specialized depth) for the response content within its topic group.
 
+
 ### 3.3 Weighted Scoring and Gap Calculation
 The model calculates a final weighted score for Supply and determines the Mismatch Gap:
 
