@@ -54,6 +54,8 @@ Ugandan farmers ask significantly more financial questions than Kenyan farmers, 
 
 Market price questions dominate financial needs in both countries, but **Uganda is far more reliant on price discovery**, with prices accounting for nearly 60% of all financial queries. **Kenyan farmers display a more diversified financial profile**, combining price discovery with strong demand for credit, startup capital, and investment evaluation. In general, seasonal patterns also mirror agricultural cycles.
 
+![Key Finding 3b](https://github.com/PreciousEnahoro/datakit-smallholder-farmers-fall-2025/blob/main/Challenge%205_%20Financial%20Inclusion/Precious%20Enahoro/key-finding-vizzes/Financial%20Subcategory%20Mix%20by%20Country.png)
+
 **Implications for Producers Direct:**
 1. Country patterns differ significantly, so localized strategies will be more effective than a uniform financial product.
 2. Since price discovery remains essential in both countries, any price-related improvements could generate cross-market impact and create immediate, large-scale value.
