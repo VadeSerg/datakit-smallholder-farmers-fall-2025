@@ -6,12 +6,8 @@ This folder contains the code and supplemental data necessary to train and expor
 
 **Question_Prediction_Model.ipynb** - this Jupyter notebook contains the code necessary to make the model. Adjust filepaths and filenames as needed in the first cell.  
 **Topic_prediction_app.py** - this simple app can be launched locally to interact with the model and generate predictions from user input.  
-**QTOPIC.pkl, QTOPIC.joblib** - these are the same final model, uploaded in two different file formats. The same model (different filename) is also uploaded to the Google Drive as _Challenge1_topic_prediction_rfmodel.pkl_.  
+**QTOPIC.pkl, QTOPIC.joblib** - these are the same final model, uploaded in two different file formats. The same model is also uploaded to the Google Drive as _Challenge1_topic_prediction_rfmodel.pkl_.  
 **UGA_weather_data.csv, KEN_weather_data.csv, TZA_weather_data.csv** - these datasets contain the weather data used to train and test the model. These datasets were helpfully prepared and shared by another DataKit participant, [İbrahim Yücel](https://github.com/ibraahimycl/datakit-smallholder-farmers-fall-2025/tree/main/Challenge%201%20_Weather%20Patterns/ibrahim-yucel/weather-data).
-
-
-
-
 
 ### What the model is
 
@@ -33,12 +29,14 @@ The weather data used here were from monthly averages/total in these countries. 
 
 Question topics should also be examined further, if possible. Exploration of the data suggests some labels are frequently a poor fit for their question content. For example, many of the questions under the topic 'camel' are actually about a bacterial disease affecting bananas, and while 'pigeon' does contain some questions related to the bird many are completely unrelated. Other topics may benefit from more sophisticated parsing; 'cat', for example, includes questions about cats, but also about cat fish and cat erpillers.
 
+## Python packages used in this repo
+
+numpy==1.26.4  
+pandas==1.4.4  
+scikit-learn==1.0.4  
+joblib==1.5.2
+streamlit==1.50.0
+
 ### Generative AI usage
 
 Generative AI was used to generate code for a couple simple exploratory analyses (not included here) and pre-processing steps. All other code was created by myself or adapted from other human-made code. All documentation, insights, and judgments are my own. 
-
-## Python packages used in model
-
-numpy 1.26.4
-pandas 1.4.4
-scikit-learn 1.0.4
