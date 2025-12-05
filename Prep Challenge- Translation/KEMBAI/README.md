@@ -16,7 +16,7 @@ This analysis explores a large dataset of questions from smallholder farmers to 
 
 ### Approach
 1. **Step 1**: Data loading and initial exploration using Pandas and Dask to handle the large volume.
-2. **Step 2**: Data cleaning and preprocessing, which included removing 20,908,750 duplicate rows.
+2. **Step 2**: Data cleaning and preprocessing, which included removing full duplicate rows.
 3. **Step 3**: Analysis of language distribution and identification of top users and topics.
 4. **Step 4**: Keyword extraction for financial and agricultural topics using custom scripts. The data was split by language, and keywords were generated for each.
 5. **Step 5**: Visualization of the findings, including dashboards for financial and crop-related questions based on English keywords.
@@ -25,23 +25,23 @@ This analysis explores a large dataset of questions from smallholder farmers to 
 - **Programming Language**: Python
 - **Key Libraries**: pandas, dask, pyspark
 - **GenAI Tools Used**: 
-    - **ChatGPT**: Assisted in writing code to count keywords.
-    - **Gemini CLI**: Used for initial data exploration and extracting financial and agricultural keywords.
+    - **ChatGPT**: Assisted in writing code to count keywords and help in using the libraries.
+    - **Gemini CLI**: Used for initial data exploration and extracting financial and agricultural keywords, based on full generated words.
 - **Other Tools**: Google Colab (for increased RAM and processing power).
 
 ## Use of Generative AI
 
 ### Tools Used
 - **ChatGPT**: Used for generating Python code to perform keyword extraction and counting.
-- **Gemini CLI**: Used to explore the data within the local environment and perform initial keyword extraction.
+- **Gemini CLI**: Used to explore the data within the local environment and perform initial keyword extraction, also used Gemini CLI to collect all the work steps written in different placess in one place as a documentation.
 
 ### Human Review Process
-- All AI-generated code was reviewed, tested, and adapted for the specific needs of the analysis.
+- All AI-generated code was reviewed and tested by human then updated to meet specific requirements.
 - AI-generated summaries and insights were validated against the raw data to ensure accuracy.
 
 ### AI-Assisted vs. Human-Created
-- **AI-Assisted**: Code generation for data processing and keyword extraction.
-- **Human-Created**: The overall project structure, analysis logic, interpretation of results, and the synthesis of the final report.
+- **AI-Assisted**: Learning libraries, do a redundent code, write docuemntation.
+- **Human-Created**: Planning, invovating, review, test, structure the project and write a prompts.
 
 ## Key Findings
 
