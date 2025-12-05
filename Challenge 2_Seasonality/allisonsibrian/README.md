@@ -1,7 +1,7 @@
 # Allison Sibrian - Challenge 2 Analysis
 
 ## Overview
-This project analyzes the seasonality of farmers' questions across Kenya, Uganda, and Tanzania. By correlating farmer question volume with ERA5 weather data and performing NLP keyword analysis on a split dataset (English vs. Local Languages), I identify distinct seasonal words for each region.
+This project analyzes the seasonality of farmers' questions across Kenya, Uganda, and Tanzania. By correlating farmer question volume with ERA5 weather data and performing NLP keyword analysis on a split dataset (English vs. Local Languages), I identify distinct seasonal keywords for each region.
 
 ## Research Questions
 - Question 1: Do farmer questions align with their countries' farming season?
@@ -50,15 +50,36 @@ For Tanzania:
 It seems that question volume is most concentrated towards the end of the Masika Rains (Apr-May) and towards the end of Vuli Rains.
 
 **Implications for Producers Direct:**
-- Question volume seems to be occurring more during the second half of the year (Kenya/Uganda) rather than the first half of the year. It would be helpful to be more alert during this time and provide land preparation resources as this is the preparation phase for Kenyan and Ugandan farmers.
-- Likewise for the Masika Rains period for Tanzania farmers.
-- 
-### The Regional HeatMap
+- Question volume in Kenya and Uganda is highest in the second half of the year (August–November), rather than the first. This suggests that farmers are actively seeking information to prepare for the "Short Rains." Similarly, Tanzania sees high activity during the end of the Masika Rains. These windows should be treated with more attention as these are the periods where user engagement is happening the most.
+- It would be helpful to inspect the questions during this time and push for resource services, such as land preparation, to address farmer needs.
 
+### Distinct Seasonal Keywords Per Country
+Creating a heatmap of each country's seasonal keywords displays the correlation between specific topics and the current farming cycle. 
+
+For Kenya's English and Translated Group: 
+For both groups, 'Maize', 'Cow', and 'Chicken' appear as the top 3/4 most frequent keywords.
+
+- Maize topics tend to have a higher frequency (per 1K words) during the Transition period (September), the Second Planting Season (Oct-Dec), and during Harvest 2 months (Jan-Feb)
+- Cow topics also seem to dominate around the short rains (Oct-Dec) and the Transition period in September.
+- Chicken topics are notably higher in the Translated dataset, peaking during the Short Rains.
+
+For Uganda's English and Translated Group: 
+While the Translated group contained higher non-agricultural noise, the combined view reveals 'Maize', 'Plant', 'Tomato', and 'Water' as top keywords.
+
+- Maize topics dominate the Second Rains: Planting Season 2 (Sept-Nov).
+- Plant topics occur more frequently during the First Rains: Planting Season 1 (March-May), suggesting that farmers may be asking about crop selection and planting decisions for the current season.
+- Tomato topics dominate Harvest 1 season (June-Aug)
+
+For Tanzania:
+Similar to Kenya, 'maize' and 'chicken' are the top 2 frequent words but 'seed' also tends to dominate.
+
+- Maize topics are most frequent during the Transition (September) months and the Vuli Rains Planting Season 2 (Oct-Nov).
+- Chicken topics occur most during the Vuli Rains and the Harvest season (June-Aug).
+- Seed topics mostly dominate the Transition and Vuli Rains period. 
 
 **Implications for Producers Direct:**
-- How this finding can be used
-- What actions it suggests
+- Since 'Maize' and 'Chicken' dominate simultaneously, this serves as a baseline to investigate whether farmers are practicing integrated mixed farming 
+- Specific regional topics like 'Tomato' (Uganda) and 'Seed' (Tanzania) indicates further investigation if questions are about need for specifci agricultural/crop support. It would be helpful to organize the platform's questions by a crop category.
 
 
 ## Visualizations
@@ -69,41 +90,33 @@ It seems that question volume is most concentrated towards the end of the Masika
 ![Visualization 3](http://localhost:8888/lab/tree/Challenge%202_Seasonality/allisonsibrian/Tanzania_qprcp.png)
 
 **Interpretation**: 
+This visualization shows the ERA5 overlay on farmer question volume.
 
+- Question Volume tends to peak during the second half of the year (Kenya/Uganda), while it peaks during the Masika Rains for Tanzania.
 
 ### Regional Heatmap
 ![Visualization 4](http://localhost:8888/lab/tree/Challenge%202_Seasonality/allisonsibrian/word_frequencies_countries.png)
 
 **Interpretation**: 
+This heatmap displays the Top 10 word frequencies per region, identifying distinct seasonal keywords.
+
+- This visualization confirms that while 'Maize' and 'Plant' are dominant keywords, there are still distinct regional differences: 'Rice' and 'Seed' appear in Tanzania, while 'Tomato' appears in Uganda.
+
 
 ## Limitations and Challenges
 
 ### Data Limitations
-- Missing data issues
-- Data quality concerns
-- Sample size or coverage limitations
-
-### Methodological Limitations
-- Assumptions made
-- Simplifications required
-- Alternative approaches not explored
-
-### Technical Challenges
-- Computational constraints
-- Translation accuracy issues
-- Other technical hurdles
+- The Uganda (Translated) dataset contained significant non-agricultural noise (e.g., "future", "seat", "ministry"), resulting in a higher non-agricultural frequency compared to the English dataset.
+- The English dataset is larger than the Local dataset, requiring normalization (Frequency per 1K) to allow for visual comparison.
 
 ## Next Steps and Recommendations
 
 ### For Further Analysis
-1. **Recommendation 1**: What could be explored next
-2. **Recommendation 2**: How to deepen this analysis
-3. **Recommendation 3**: Related questions to investigate
+1. **Recommendation 1**: Improve upon translation by utilizing stronger translation models validated by local users to reduce noise, and implement Topic Modeling (LDA) to identify any themes that stick out.
+2. **Recommendation 2**: Expand analysis to utilize the whole dataset instead of the current 0.5% translated samples and whole English dataset.
 
 ### For Producers Direct
-1. **Action 1**: Specific recommendation for the organization
-2. **Action 2**: How to use these insights
-3. **Action 3**: What additional data or resources would help
+1. **Action 1**: Data shows question volume peaks during the harvest and transition periods rather than the primary planting season. Producer's Direct should investigate questions during this season and be ready to prioritize post-harvest handling and second-season preparation to meet farmers' needs.
 
 ## Contact and Collaboration
 
