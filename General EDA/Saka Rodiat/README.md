@@ -61,6 +61,18 @@ Human Oversight
 
 All analyses, visual outputs, interpretations, and conclusions were produced and validated manually.
 
+## Files in this submission
+
+wefarm_data_eda.ipynb** – Jupyter Notebook containing the EDA analysis.
+-Wefarm_data_sample.csv** – Sample dataset used in the notebook.
+README.md** – This file describing the submission.
+
+## How to run the notebook
+
+1. Make sure you have pandas installed: pip install pandas.
+2. Open wefarm_data_eda.ipynb in Jupyter Notebook or Jupyter Lab.
+3. The notebook loads the sample CSV ('Wefarm_data_sample.csv') automatically and performs exploratory data analysis.
+
 Results and Findings
 Question Topics
 
