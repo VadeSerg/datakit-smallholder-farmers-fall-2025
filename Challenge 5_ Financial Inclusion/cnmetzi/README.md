@@ -1,4 +1,5 @@
 # cnmetzi - Financial Inclusion Analysis
+This is all I had time to finish before the deadline but remains unfinished as detailed below
 
 ## Overview
 Goal: Explore how smallholder farmers discuss financial topics such as market prices, credit access, savings, and other non-farming livelihood concerns to better understand their economic realities and opportunities for inclusion.
@@ -39,7 +40,7 @@ Used this as starting financial word list: investment, loan, grant, interest, ra
 
 ### AI-Assisted vs. Human-Created
 - **AI-Assisted**: Generate initial possible farming finance related keywords and reduce existing stems to those possibly related to finance; writing functions quickly for stemming and counting
-- **Human-Created**: [List which parts, e.g., "All analysis logic, interpretation, and conclusions"]
+- **Human-Created**: The rest
 
 ## Key Findings
 
@@ -50,31 +51,14 @@ Roughly 25% of the English tagged questions do not have a topic, and there are n
 - Given the significant gap in topic data treat analysis done on available topics with caution knowing that there are many questions not tagged with topic 
 - Recommend using the question content for topic analysis especially for financial topics
 
-### Finding 2: [Title]
-Description of the finding, supported by data and visualizations.
+### Finding 2: Possibly ~10% of the questions in eng had financial keywords
+Reviewing all the stems from all the eng questions showed what were the most commonly used finacial keyworks (top 100) and then about 10% of the questions seemed to contain at least one of the financial keywords
+More work on this is needed and I wasn't able to finish but the keywords extracted should be helpful for understanding which questions had a financial element
 
 **Implications for Producers Direct:**
-- How this finding can be used
-- What actions it suggests
+- Check out the financial keywords generated and use for further analysis
+- It suggests possibly ~10% of the questions could have a financial angle but the questions may need to be very reduced to eliminate users asking the question again to try to solve the initial question (see example in notebook)
 
-### Finding 3: [Title]
-Description of the finding, supported by data and visualizations.
-
-**Implications for Producers Direct:**
-- How this finding can be used
-- What actions it suggests
-
-## Visualizations
-
-### [Visualization 1 Title]
-![Visualization 1](visualizations/viz1.png)
-
-**Interpretation**: What this visualization shows and why it matters.
-
-### [Visualization 2 Title]
-![Visualization 2](visualizations/viz2.png)
-
-**Interpretation**: What this visualization shows and why it matters.
 
 ## Limitations and Challenges
 
@@ -83,14 +67,12 @@ Description of the finding, supported by data and visualizations.
 
 ### Methodological Limitations
 - Limited EDA was done that would potentially show the need for more data cleansing or preparation
-- Assumed questions tagged as eng would basically be in English, each question has a unqiue id without error or duplicates due to time contrainst (this should be checked)
+- Assumed questions tagged as eng would basically be in English, each question has a unqiue id without error or duplicates due to time contrainst (this seems unlikely given the sample shown in the notebook)
 - Simplified by just looking at questions versus the question and answer both to see if the discussion was related to Finance
 - If we had some question data that was labeled as Financial or not that would be helpful to use with other modeling or checking how well the keyword approach picks up relevant questions
 
 ### Technical Challenges
-- Computational constraints
-- Translation accuracy issues
-- Other technical hurdles
+N/A
 
 ### Miscellaneous
 - When looking at common stems I noticed some words from other languages were still used in the english questions and should potentially be translated when doing other topic analysis, i.e. obuyambi (sometimes mispelled obuyabi), buyinza
@@ -100,13 +82,11 @@ Description of the finding, supported by data and visualizations.
 
 ### For Further Analysis
 1. **Recommendation 1**: Need to do more work to figure out how to reduce or better understand when the same question is repeated by different users and question ids on the same day but seems to all be from the same original question
-2. **Recommendation 2**: How to deepen this analysis
-3. **Recommendation 3**: Related questions to investigate
+2. **Recommendation 2**: Need to check the financial stems extracted to confirm those are of interest
+3. **Recommendation 3**: Use the financial stems to identify financial questions and perform analysis to understand frequency, timing, etc. 
 
 ### For Producers Direct
-1. **Action 1**: Specific recommendation for the organization
-2. **Action 2**: How to use these insights
-3. **Action 3**: What additional data or resources would help
+1. **Action 1**: Further analysis recommended above
 
 ## Files in This Contribution
 
@@ -118,10 +98,13 @@ your_name_analysis/
 ├── scripts/
 ├── visualizations/
 ├── results/
-│   ├── summary_statistics.csv
 └── data/ (if applicable - only small derived datasets)
     ├── allstemcounter_output.csv
     ├── possiblefinanceinexistingquestions.csv
+    ├── lessfrequentpossiblefinancialbutnotused.csv
+    ├── toppotentialfinancialkeywords.csv
+    ├── allstemcounter_output_manually_reduced.csv
+
 ```
 
 ## How to Run This Analysis
@@ -349,6 +332,7 @@ zstd                      1.5.7
 - Open to feedback and suggestions
 - Happy to collaborate on related analyses
 - Available to answer questions about this approach
+- Basically I ran out of time to keep working on this before the DataDive ended but happy to continue if it would be helpful
 
 ## Acknowledgments
 
@@ -359,3 +343,4 @@ This example submission template and clear instructions in the brief made things
 
 **Last Updated**: 12/5/25
 **Status**: Needs Review
+
