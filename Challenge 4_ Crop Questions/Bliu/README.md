@@ -1,7 +1,7 @@
-# [Your Name] - [Challenge Name] Analysis
+# [Beatrice Liu] - [Challenge 4 - Crop Questions] Analysis
 
 ## Overview
-Brief description of what you're analyzing and why it matters for Producers Direct and smallholder farmers.
+Created bi-, tri-, and quad-grams for English questions on:  cattle, tomato, maize, chickens, and no topic to discern most common questions; these can be used by Producers Direct to create FAQ for smallholder farmers.
 
 ## Research Questions
 - Question 1: What specific question are you trying to answer?
@@ -15,38 +15,37 @@ Brief description of what you're analyzing and why it matters for Producers Dire
 - Note any external data sources (weather, agricultural calendars, etc.)
 - Document any data preprocessing steps
 
-### Approach
+### Approach /  Notebooks: Overview describes steps in greater detail
 1. **Step 1**: Data loading and initial exploration
 2. **Step 2**: Data cleaning and preprocessing
 3. **Step 3**: Analysis techniques applied
 4. **Step 4**: Visualization and interpretation
 5. **Step 5**: Validation and testing
+1.
+6. 
 
 ### Tools and Technologies
-- **Programming Language**: Python 3.x / R
-- **Key Libraries**: pandas, numpy, matplotlib, seaborn, scikit-learn, etc.
-- **GenAI Tools Used**: ChatGPT, GitHub Copilot, etc. (be specific about what and how)
-- **Other Tools**: Jupyter Notebook, Tableau, etc.
+- **Programming Language**: Python 3.13.5 
+- **Key Libraries**: pandas, numpy, matplotlib, nltk, deep-language... - full list is in the notebooks
+- **GenAI Tools Used**: ChatGPT, Anaconda Toolbox
+- **Other Tools**: Jupyter Notebook
 
 ## Use of Generative AI
 
 ### Tools Used
-- **ChatGPT**: Used for [specific purpose, e.g., "generating initial code structure for data loading"]
-- **GitHub Copilot**: Used for [specific purpose, e.g., "autocompleting repetitive data cleaning code"]
+- **ChatGPT**: Used for generating code for natural language processing functions in English, translating Swahili tokens into English
+- **Anaconda Toolbox**: Used for generating interactive network graphs
 
 ### Human Review Process
 - All AI-generated code was reviewed and tested for accuracy
 - AI-generated insights were validated against the data
-- Modified AI suggestions in the following ways: [list modifications]
+- Modified AI suggestions in the following ways: coding errors
 
-### AI-Assisted vs. Human-Created
-- **AI-Assisted**: [List which parts, e.g., "Initial data visualization code structure"]
-- **Human-Created**: [List which parts, e.g., "All analysis logic, interpretation, and conclusions"]
 
 ## Key Findings
 
-### Finding 1: [Title]
-Description of the finding, supported by data and visualizations.
+### Finding 1: [Translating from Swahili is a major roadblock]
+Filtered Description of the finding, supported by data and visualizations.
 
 **Implications for Producers Direct:**
 - How this finding can be used
