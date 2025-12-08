@@ -22,7 +22,8 @@ Created bi-, tri-, and quad-grams and interactive visualizations for English que
 
 ### Output Files and Visualizations
 - Cleaned data files and interactive visualizations can be found in [google drive folder](https://drive.google.com/drive/folders/1tpwqTqoFfZCWvDvncJjaSbzzua0Y6Q_i?usp=sharing)
-- Note:  visualizations are uploaded to github in 'network_graphs' folder  
+- Note:  visualizations are uploaded to github in 'network_graphs' folder
+- n-gram frequency graphs can be found in individual notebooks; the PNG files created cropped out the text 
 
 
 ### Tools and Technologies
@@ -80,19 +81,19 @@ Description of the finding, supported by data and visualizations.
 ## Limitations and Challenges
 
 ### Data Limitations
-- Missing data issues
-- Data quality concerns
-- Sample size or coverage limitations
+- Missing data issues:  gender, location other than country
+- Data quality concerns: vague data dictionary
+- Sample size or coverage limitations:  
 
 ### Methodological Limitations
-- Assumptions made
+- Assumptions made: dropped 'blocked' and 'destroyed' users
 - Simplifications required
 - Alternative approaches not explored
 
 ### Technical Challenges
 - Computational constraints
-- Translation accuracy issues - YES
-- Other technical hurdles - data dictionary was vague
+- Translation accuracy issues - YES, need Wwahili NL processor trained on agricultural terms
+- Other technical hurdles - 
 
 
 
@@ -129,56 +130,21 @@ Bliu_analysis/
     └── ken_500trigrams_swa2eng.txt
 ```
 
-## How to Run This Analysis
+## How to Run This Analysis -- *I have no clue, did everything in Jupyter*
 
-### Prerequisites
-```bash
-pip install pandas numpy matplotlib seaborn jupyter
+
+# Open and run notebooks in order: refer to 'Q4.Ngrams.Jupyter.Notebooks.pdf' 
+
 ```
 
-### Running the Analysis
-```bash
-# Navigate to the notebooks folder
-cd notebooks/
-
-# Start Jupyter Notebook
-jupyter notebook
-
-# Open and run notebooks in order:
-# 1. 01_data_exploration.ipynb
-# 2. 02_data_cleaning.ipynb
-# 3. 03_analysis.ipynb
-```
-
-## References and Resources
-
-### Academic Papers
-- Author, A. (Year). Title. Journal.
-
-### Datasets
-- Dataset Name. Source. URL.
-
-### Tools and Libraries
-- Library Name. Version. URL.
 
 ## Contact and Collaboration
 
-**Author**: [Your Name]
-**GitHub**: @hwilner
-**Slack**: @[your_slack_handle]
-
-**Collaboration Welcome**: 
-- Open to feedback and suggestions
-- Happy to collaborate on related analyses
-- Available to answer questions about this approach
-
-## Acknowledgments
-
-- Thanks to [other contributors] for [specific help]
-- Built upon work by [other contributors] in [other challenges]
-- Inspired by [specific approach or paper]
+**Author**: [Beatrice Liu]
+**GitHub**: @bl1412
+ 
 
 ---
 
 **Last Updated**: [Date]
-**Status**: [In Progress / Complete / Needs Review]
+**Status**: [Analysis Complete, but Findings Summary is WIP]
