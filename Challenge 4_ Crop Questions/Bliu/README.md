@@ -1,7 +1,7 @@
-# Beatrice Liu: Challenge 4 - Crop Questions Analysis 
+## Beatrice Liu: Challenge 4 - Crop Questions Analysis 
 
 ## Overview
-Conducted word frequency analysis on questions by Kenyan Farmers in the Producers Direct Dataset of WeFarm SMS; created interactive and static visualizations of top bi-, tri-, and quad-grams on top 5 topics -  cattle, tomato, maize, chickens, none -  to identify patterns and relationships and communicate insights concisely. Note:  I can't figure out how to display the interactive graphs here; they are saved in the network_graphs folder.
+Conducted word frequency analysis on questions by **Kenyan Farmers** in the Producers Direct Dataset of WeFarm SMS; created interactive and static visualizations of top bi-, tri-, and quad-grams on top 5 topics -  cattle, tomato, maize, chickens, none -  to identify patterns and relationships and communicate insights concisely. Note:  I can't figure out how to display the interactive graphs here; they are saved in the network_graphs folder.
 
 See *'farmers.bliu.pdf'* for summary of findings
 
@@ -15,7 +15,7 @@ See *'farmers.bliu.pdf'* for summary of findings
 - Producers Direct Dataset of WeFarm SMS
 - Swahili [stopword](https://data.mendeley.com/datasets/mmf4hnsm2n/1) and [verb conjugation](https://data.mendeley.com/datasets/rvt89578g5/1) files  
 
-### Approach: *Notebook overviews describe steps in greater detail - see 'Q4.Ngrams.Jupyter.Notebooks.pdf' for list of notebooks and their running order*
+### Approach: *Notebook overviews describe steps in greater detail* 
 1. Data loading and initial exploration
 2. Data cleaning and preprocessing
 3. Data segmentation into smaller datasets for analyses: unique questions asked by farmers in 4 countries
@@ -44,7 +44,7 @@ See *'farmers.bliu.pdf'* for summary of findings
 
 ### Human Review Process
 - All AI-generated code was reviewed and tested for accuracy
-- Modified AI suggestions in the following ways: fix a surprising number of coding errors
+- Modified AI suggestions in the following ways: fixed a surprising number of coding errors
 
 
 ## Key Findings: *Refer to 'farmers.bliu.pdf'*
@@ -59,11 +59,11 @@ See *'farmers.bliu.pdf'* for summary of findings
 
 ### Additional Findings:  *Refer to 'farmers.bliu.pdf'*
 - With These Challenges, Swahili Trigrams Translated in English – All Topics –  Were More Informative Than Bi- or Quadgrams
-- Tri-grams of English Questions Without a Topic, Still Focused on Farming:  e.g. Best Practices on Birthing Calves, Planting Maize and Starting a Poultry Farm
-- Cattle Tri-grams Focused on Giving Birth, Milk Production, and Health
-- Kenyan Chicken Farmers Asked About Young Chicks, Laying Eggs, and Medicines
+- Tri-grams of English Questions Without a Topic Still Focused on Farming:  e.g. Best Practices on Birthing Calves, Planting Maize and Starting a Poultry Farm
+- Cattle Farmers in Kenya Focused on Giving Birth, Milk Production, and Health
+- Chicken Farmers in Kenya Asked About Young Chicks, Laying Eggs, and Medicines
 - Maize Farmers in Kenya Asked About the Best Fertilizer and Weed Control, Best Seeds and Planting
-- Tomato Farmers Asked About Planting, Best Seeds,  and Keeping Tomatoes Disease-Free
+- Tomato Farmers in Kenya Asked About Planting, Best Seeds, and Keeping Tomatoes Disease-Free
 
 
 ## Static Network Visualizations: *see file list below for interactive graphs* 
@@ -75,16 +75,16 @@ See *'farmers.bliu.pdf'* for summary of findings
 ## Limitations and Challenges
 
 ### Data Limitations
-- Missing data issues:  gender, location other than country
+- Missing data issues:  gender, country-level location, nothing more granular
 - Data quality concerns: vague data dictionary
-- Translations:  These African languages are linguistically complex, with unique syntax, idioms, and dialectal variations that are region-specific.  
+- Translations:  These African languages are linguistically complex, with unique syntax, idioms, and dialectal variations that are region-specific  
 
 ### Methodological Limitations
-- Assumptions made: 'blocked' and 'destroyed' user statuses were dropped from analysis.
-- Impractical to call on GoogleTranslate to translate the full text of > 2 mm questions:  extracted and translated most frequent combination of words in the questions
+- Assumptions made: *'blocked'* and *'destroyed'* user statuses were dropped from analysis
+- Impractical to call GoogleTranslate to translate the full text of > 2 mm questions:  extracted and translated most frequent word combination in the questions
   
 ### Technical Challenges
-- Translation accuracy issues - YES! Swahili is an under-resourced language in Natural Language Processing and commonly used Python packages such as SpaCy, NLTK, or Gensim do not have inherent Swahili support
+- Translation accuracy issues - **YES** *see above*
 
 
 ## Files in This Contribution
@@ -122,7 +122,7 @@ Bliu_analysis/
 ### How to Run This Analysis -- *I have no clue, did everything in Jupyter*
 
 
-### Open and run notebooks in order: refer to 'Q4.Ngrams.Jupyter.Notebooks.pdf' 
+### Open and run notebooks in order:
 ![Order of Jupyter Notebooks](Jupyter_notebook_order_bliu.png)
 
 ```
