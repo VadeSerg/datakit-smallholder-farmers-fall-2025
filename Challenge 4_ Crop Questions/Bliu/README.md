@@ -120,7 +120,7 @@ Bliu_analysis/
 
 
 ### Open and run notebooks in order: refer to 'Q4.Ngrams.Jupyter.Notebooks.pdf' 
-![Order of Jupyter Notebooks](Challenge 4_ Crop Questions/Bliu/Jupyter_notebook_order_bliu.png)
+![Order of Jupyter Notebooks](Challenge 4_ Crop Questions/Bliu/Q4.Ngrams.Jupyter.Notebooks.pdf)
 
 ```
 
