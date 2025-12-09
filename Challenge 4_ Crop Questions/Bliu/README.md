@@ -67,8 +67,8 @@ See *'farmers.bliu.pdf'* for summary of findings
 
 
 ## Visualizations: *see file list below* 
-![Tri-Grams Network Graph] (Challenge 4_ Crop Questions/Bliu/network_graphs/top30trigrams_ken_eng_Notopic_network.png)
-![Bi-Grams Network Graph] (Challenge 4_ Crop Questions/Bliu/network_graphs/top40bigrams_ken_eng_Notopic_network.png)
+![Tri-Grams Network Graph](Challenge 4_ Crop Questions/Bliu/network_graphs/top30trigrams_ken_eng_Notopic_network.png)
+![Bi-Grams Network Graph](Challenge 4_ Crop Questions/Bliu/network_graphs/top40bigrams_ken_eng_Notopic_network.png)
 
 ## Limitations and Challenges
 
