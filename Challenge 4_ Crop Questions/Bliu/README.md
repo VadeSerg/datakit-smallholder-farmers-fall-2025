@@ -110,7 +110,7 @@ Bliu_analysis/
 │   └── top40trigrams_ken_eng_network.png
 │   └── top40bigrams_ken_eng_network.png
 │   └── top40bigrams_ken_eng_Notopic_network.png
-│   └── top40trigrams_ken_eng_network.png
+│   └── top30trigrams_ken_eng_network.png
 ├── results - *sorry, no markdown file*/
 │   ├── farmers.bliu.pdf
 └── translated n-grams from swahili to english data/ 
